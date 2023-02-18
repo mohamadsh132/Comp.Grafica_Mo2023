@@ -13,7 +13,7 @@ void Cola::DibujarCola(float p, int n, float x, float y, float z)
 	glTranslatef(-0.25, 2, -2);
 
 	glPushMatrix();
-	glScalef(0.5, 0.1, 0.5); //0.5 altura del cubo
+	glScalef(0.5, 0.1, 0.5); 
 	glutSolidCube(0.8);
 	glPopMatrix();
 	float r = 0.2;
@@ -31,7 +31,7 @@ void Cola::DibujarCola(float p, int n, float x, float y, float z)
 		q += 0.1;
 	}
 
-	for (int i = 0; i < (n - 3); i++) {
+	for (int i = 0; i < (n - 3); i++) {  #En esta parte me ayudaron :)
 
 		glTranslatef(0.10, 0.0, 0.0);
 		glRotatef(p, 0.0, 0.0, -1.0);
